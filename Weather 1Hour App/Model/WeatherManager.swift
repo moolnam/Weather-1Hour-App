@@ -36,6 +36,8 @@ struct WeatherManager {
     }
     
     func performRequest(with urlString: String) {
+        // 내부에선 urlString 을 사용
+        // 외부에선 with 을 사용
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
