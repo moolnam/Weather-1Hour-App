@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func locationButton(_ sender: UIButton) {
-        // Location Button
+        
     }
     
     @IBAction func searchButton(_ sender: UIButton) {
