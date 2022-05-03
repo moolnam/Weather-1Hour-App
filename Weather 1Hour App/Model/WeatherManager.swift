@@ -24,13 +24,13 @@ struct WeatherManager {
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?"
     
     func fetchWeather(cityName: String) {
-        let urlString = "\(weatherURL)&appid=\(apiKey)&q=\(cityName)"
+        let urlString = "\(weatherURL)&appid=\(apiKey)&q=\(cityName)&units=metric"
         print(urlString)
         performRequest(with: urlString)
     }
     
     func fetchWeather(lon: CLLocationDegrees, lat: CLLocationDegrees) {
-        let urlString = "\(weatherURL)lat=\(lat)&lon=\(lon)&appid=\(apiKey)"
+        let urlString = "\(weatherURL)lat=\(lat)&lon=\(lon)&appid=\(apiKey)&units=metric"
         print(urlString)
         performRequest(with: urlString)
     }

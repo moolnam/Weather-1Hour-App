@@ -100,7 +100,7 @@ extension ViewController: WeatherManagerDelegate {
             self.temperatureLabel.text = weather.temperatureString
             self.cityNameLabel.text = weather.cityName
             self.weatherIconImage.image = UIImage(systemName: weather.conditionName)
-            //d
+            //ddd
         }
     }
     
