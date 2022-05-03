@@ -16,6 +16,7 @@
 		784C5B652820CD2000F1212A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784C5B632820CD2000F1212A /* LaunchScreen.storyboard */; };
 		784C5B6F2820CD4600F1212A /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C5B6E2820CD4600F1212A /* WeatherData.swift */; };
 		784C5B722820CD5D00F1212A /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C5B712820CD5D00F1212A /* WeatherManager.swift */; };
+		788DE5EA2820E3B700AB3A53 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE5E92820E3B700AB3A53 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		784C5B662820CD2000F1212A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		784C5B6E2820CD4600F1212A /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		784C5B712820CD5D00F1212A /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		788DE5E92820E3B700AB3A53 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				784C5B6E2820CD4600F1212A /* WeatherData.swift */,
 				784C5B712820CD5D00F1212A /* WeatherManager.swift */,
+				788DE5E92820E3B700AB3A53 /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				784C5B722820CD5D00F1212A /* WeatherManager.swift in Sources */,
 				784C5B602820CD1E00F1212A /* Weather_1Hour_App.xcdatamodeld in Sources */,
 				784C5B6F2820CD4600F1212A /* WeatherData.swift in Sources */,
+				788DE5EA2820E3B700AB3A53 /* WeatherModel.swift in Sources */,
 				784C5B5A2820CD1E00F1212A /* ViewController.swift in Sources */,
 				784C5B562820CD1E00F1212A /* AppDelegate.swift in Sources */,
 				784C5B582820CD1E00F1212A /* SceneDelegate.swift in Sources */,
