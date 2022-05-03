@@ -6,15 +6,47 @@
 //
 
 import Foundation
+import UIKit
 struct WeatherModel {
     let conditionId: Int
     let cityName: String
     let temperature: Double
+//    let colorId: Int
     
     var temperatureString: String {
         return String(format: "%.1f", temperature)
     }
     
+    var conditionColor: UIColor {
+        switch conditionId {
+        case 200...232:
+            return UIColor.yellow
+        case 300...321:
+            return UIColor.yellow
+        case 500...531:
+            return UIColor.yellow
+        case 600...622:
+            return UIColor.yellow
+        case 701...711:
+            return UIColor.red
+        case 721:
+            return UIColor.red
+        case 731:
+            return UIColor.red
+        case 741...751:
+            return UIColor.red
+        case 761:
+            return UIColor.red
+        case 762:
+            return UIColor.red
+        case 771...781:
+            return UIColor.red
+        case 800:
+            return UIColor.white
+        default:
+            return UIColor.white
+        }
+    }
     
     var conditionName: String {
         switch conditionId {
