@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var lat: UILabel!
+    @IBOutlet weak var lon: UILabel!
+    @IBOutlet weak var tempMax: UILabel!
+    @IBOutlet weak var tempMin: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,6 +113,10 @@ extension ViewController: WeatherManagerDelegate {
             self.weatherIconImage.image = UIImage(systemName: weather.conditionName)
             self.weatherIconImage.tintColor = weather.conditionColor
             self.descriptionLabel.text = weather.conditionDescription
+            self.lat.text = String(weather.lat)
+            self.lon.text = String(weather.lon)
+            self.tempMax.text = "최저 온도 \(String(Int(weather.tempMax)))"
+            self.tempMin.text = "최고 온도 \(String(Int(weather.tempMin)))"
         }
     }
     

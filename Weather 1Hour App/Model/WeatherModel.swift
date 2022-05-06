@@ -13,6 +13,10 @@ struct WeatherModel {
     let cityName: String
     let temperature: Double
     let description: String
+    let lon: Double
+    let lat: Double
+    let tempMax: Double
+    let tempMin: Double
 //    let colorId: Int
     
     var temperatureString: String {
