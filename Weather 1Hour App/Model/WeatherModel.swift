@@ -7,14 +7,28 @@
 
 import Foundation
 import UIKit
+
 struct WeatherModel {
     let conditionId: Int
     let cityName: String
     let temperature: Double
+    let description: String
 //    let colorId: Int
     
     var temperatureString: String {
         return String(format: "%.1f", temperature)
+    }
+    
+    
+    var conditionDescription: String {
+        switch description {
+        case "scattered clouds":
+            return "희미한 구름"
+        case "clear sky":
+            return "완죤 맑음"
+        default:
+            return "날씨 정보 모름"
+        }
     }
     
     var conditionColor: UIColor {

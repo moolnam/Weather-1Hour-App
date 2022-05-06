@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var weatherIconImage: UIImageView!
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +49,8 @@ class ViewController: UIViewController {
     
 }
 
+//MARK: - CLLocationManagerDelegate
+
 extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
@@ -64,6 +67,8 @@ extension ViewController: CLLocationManagerDelegate {
         print(error)
     }
 }
+
+//MARK: - UITextFieldDelegate
 
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -94,6 +99,8 @@ extension ViewController: UITextFieldDelegate {
     }
 }
 
+//MARK: - WeatherManagerDelegate
+
 extension ViewController: WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
         DispatchQueue.main.async {
@@ -101,6 +108,7 @@ extension ViewController: WeatherManagerDelegate {
             self.cityNameLabel.text = weather.cityName
             self.weatherIconImage.image = UIImage(systemName: weather.conditionName)
             self.weatherIconImage.tintColor = weather.conditionColor
+            self.descriptionLabel.text = weather.conditionDescription
         }
     }
     
