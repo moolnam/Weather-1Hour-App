@@ -117,6 +117,7 @@ extension ViewController: WeatherManagerDelegate {
             self.lon.text = String(weather.lon)
             self.tempMax.text = "최저 온도 \(String(Int(weather.tempMax)))"
             self.tempMin.text = "최고 온도 \(String(Int(weather.tempMin)))"
+            // 최고온도, 최저온도 추가
         }
     }
     
